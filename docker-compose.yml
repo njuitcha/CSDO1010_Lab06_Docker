@@ -1,1 +1,12 @@
-# Add your material here
+services:
+  web:
+    image: njuitcha/lab06-nginx:1.0
+    container_name: lab06-nginx
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+    # Optional: override image content with local files (for quick edits)
+    # volumes:
+    #   - ./Docs:/usr/share/nginx/html:ro
+# Mise à jour Lab 06 - Branche Docs
